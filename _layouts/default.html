@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Plain Description -->
+  <title>{{page.title}} -- {{ site.title }}</title>
+	<meta name="description" content="{{site.tagline}}">
+	<link rel="icon" type="image/png" href="/favicon.png">
+	
+	<!-- Google+ -->
+	<link rel="publisher" href="https://plus.google.com/{{site.googleplus}}"/>
+	<meta itemprop="name" content="{{page.title}}">
+	<meta itemprop="description" content="{site.tagline}}">
+	<meta itemprop="image" content="{% if page.image %}{{site.url}}{{page.image}}{% else %}{{site.url}}{{site.socialimg}}{% endif %}">
+	
+	<!-- Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}"/>
+	<meta property="og:description" content="{{site.tagline}}"/>
+	<meta property="og:image" content="{% if page.image %}{{site.url}}{{page.image}}{% else %}{{site.url}}{{site.socialimg}}{% endif %}"/>
+	<meta property="og:url" content="{{site.url}}{{page.url}}"/>
+	<meta property="og:site_name" content="{{ site.title }} "/>
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}">
+	<meta name="twitter:description" content="{{site.tagline}}">
+	<meta name="twitter:image" content="{{site.url}}{{site.socialimg}}">
+	<meta name="twitter:url" content="{{site.url}}{{page.url}}">
+	
+	<!-- CSS & fonts -->
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/app.css">
+	<!-- Put your fonts here -->
+</head>
+	<body>
+		<!--[if lt IE 8]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+				
+    <section>
+      <p>
+        <a href="/">civilizationnoir.com</a>
+        // <a href="https://forms.gle/oEoQiHzAuy3sohDZ9">get updates</a>
+      </p>
+    </section>
+    <section style="{{ page.page_styles }}">
+      {{ content }}
+    </section>
+    <section style="margin-top:20px;">
+      <p>
+        a film project by <a href="https://www.robcheung.com/">rob</a> and <a
+                             href="https://kortina.nyc">kortina</a>
+      </p>
+    </section>
+		
+	</body>
+</html>

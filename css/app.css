@@ -1,0 +1,92 @@
+body {
+  font-family: "Courier New", monospace;
+  text-align: center;
+  font-size: 130%;
+  line-height: 1.25;
+  color: #444;
+}
+
+header,
+section,
+footer {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+iframe,
+pre,
+section figure {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  padding-left: 8px;
+  border-left: 2px solid #ddd;
+}
+
+pre {
+  background: #fbfbfb;
+  padding: 1rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+section img {
+  max-width: 100%;
+}
+section img.full-width {
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  margin-left: calc(-50vw + 50%);
+}
+
+figcaption {
+  font-style: italic;
+  font-size: small;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}

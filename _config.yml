@@ -1,0 +1,7 @@
+# Site settings
+title: Civilization Noir
+tagline: "..."
+url: "http://civilizationnoir.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+permalink: /posts/:title/
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+future: true
